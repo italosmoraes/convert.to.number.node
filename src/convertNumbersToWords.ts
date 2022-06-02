@@ -39,7 +39,6 @@ const resolveTwoDigitNumbers = (no: number) => {
 }
 
 export const convertNumbersToWords = (no: number) => {
-  const noAsTextList = no.toString().split('')
   console.log('--- resolving:', no)
 
   let phrase = ''
@@ -47,6 +46,8 @@ export const convertNumbersToWords = (no: number) => {
   if (no < 100) {
     return resolveTwoDigitNumbers(no)
   } else {
+    const noAsTextList = no.toString().split('')
+
     const mod = no % 100
 
     if (mod === 0) {
