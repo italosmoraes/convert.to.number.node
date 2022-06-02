@@ -12,6 +12,8 @@ Create a function to convert a number to words, e.g.
 Range should be from 1 - 999
 
 TO RUN TESTS:
-
-yarn 
+=============
+```
+yarn
+``` 
 yarn jest
